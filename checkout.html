@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArulMart - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ArulMart</h1>
+        <p>Secure Checkout</p>
+    </header>
+
+    <main class="checkout-container">
+
+        <h2>Delivery Details</h2>
+
+        <form id="checkoutForm">
+
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName"
+                   placeholder="Enter your full name" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile"
+                   placeholder="Enter 10-digit mobile number"
+                   pattern="[0-9]{10}" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address"
+                      placeholder="Enter your full address"
+                      required></textarea>
+
+            <label for="city">City</label>
+            <input type="text" id="city"
+                   placeholder="Enter your city" required>
+
+            <label for="pincode">Pincode</label>
+            <input type="text" id="pincode"
+                   placeholder="Enter 6-digit pincode"
+                   pattern="[0-9]{6}" required>
+
+            <h3>Order Summary</h3>
+            <div id="checkoutSummary">
+                Loading your cart...
+            </div>
+
+            <button type="submit" id="placeOrderButton">
+                Place Order
+            </button>
+
+        </form>
+
+        <br>
+
+        <a href="cart.html">← Back to Cart</a>
+
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
