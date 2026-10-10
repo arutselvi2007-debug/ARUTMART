@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ArulMart - Manage Products</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="seller-products-page">
+
+        <header class="dashboard-header">
+
+            <div class="dashboard-logo">
+                <span>Arul</span>Mart
+            </div>
+
+            <a href="seller-dashboard.html" class="logout-link">
+                Back to Dashboard
+            </a>
+
+        </header>
+
+        <main class="seller-products-container">
+
+            <p class="dashboard-label">PRODUCT MANAGEMENT</p>
+
+            <h1>Manage Products</h1>
+
+            <p class="products-description">
+                Add and manage the products you sell on ArulMart.
+            </p>
+
+            <div class="product-management-box">
+
+                <h2>Add New Product</h2>
+
+                <label for="productName">Product Name</label>
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Enter product name"
+                >
+
+                <label for="productPrice">Price</label>
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Enter product price"
+                >
+
+                <button type="button" class="add-product-button">
+                    Add Product
+                </button>
+
+            </div>
+
+            <div class="seller-product-list">
+
+                <h2>Your Products</h2>
+
+                <div id="sellerProducts">
+
+                    <p>No products added yet.</p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+<script src="script.js"></script>
+</a>
+</body>
+</html>
